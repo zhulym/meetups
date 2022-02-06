@@ -1,0 +1,146 @@
+{
+  "page-headings": {
+    "topic": "Viewing Topic",
+    "meetups": "Meetups",
+    "meetup-detail": "Viewing Meetup",
+    "new-meetup": "New Meetup",
+    "editing-meetup": "Editing Meetup",
+    "news": "News",
+    "create-news": "Creating News",
+    "news-detail": "Viewing News",
+    "editing-news": "Editing News"
+  },
+  "header-menu": {
+    "Meetups": "Meetups",
+    "News": "News"
+  },
+  "meetups-menu": {
+    "Topics": "Topics",
+    "Moderation": "Moderation",
+    "Future": "Future",
+    "Past": "Past"
+  },
+  "auth": {
+    "logout": "Logout",
+    "login": "Login",
+    "signup": "Sign Up",
+    "signin": "Sign In",
+    "main-error": "Incorrect Name or Password. Try again or Sign Up!",
+    "errors": {
+      "name": "Name is required!",
+      "password": "Password is required!"
+    },
+    "labels": {
+      "name": "Name",
+      "password": "Password"
+    }
+  },
+  "buttons": {
+    "create-meetup": "Create Meetup",
+    "create-news": "Create News",
+    "back": "Go Back",
+    "approve-topic": "Approve Topic",
+    "support": "Support",
+    "not-support": "Not Support",
+    "book": "Book",
+    "cancel-booking": "Cancel Booking",
+    "confirm": "Confirm Meetup",
+    "cancel": "Cancel",
+    "next": "Next",
+    "save": "Save",
+    "create": "Create",
+    "preview": "Preview",
+    "edit": "Edit"
+  },
+  "topics": {
+    "support": "support",
+    "subtitles": {
+      "subject": "Subject",
+      "author": "Author",
+      "description": "Description",
+      "support": "Support"
+    }
+  },
+  "topic_key_zero": "topics suggested",
+  "topic_key_one": "topic suggested",
+  "topic_key_two": "topics suggested",
+  "topic_key_few": "topics suggested",
+  "topic_key_many": "topics suggested",
+  "topic_key_other": "topics suggested",
+  "moderation_key_zero": "meetups on moderation",
+  "moderation_key_one": "meetup on moderation",
+  "moderation_key_two": "meetups on moderation",
+  "moderation_key_few": "meetups on moderation",
+  "moderation_key_many": "meetups on moderation",
+  "moderation_key_other": "meetups on moderation",
+  "future_key_zero": "meetups published",
+  "future_key_one": "meetup published",
+  "future_key_two": "meetups published",
+  "future_key_few": "meetups published",
+  "future_key_many": "meetups published",
+  "future_key_other": "meetups published",
+  "past_key_zero": "meetups passed",
+  "past_key_one": "meetup passed",
+  "past_key_two": "meetups passed",
+  "past_key_few": "meetups passed",
+  "past_key_many": "meetups passed",
+  "past_key_other": "meetups passed",
+  "meetups": {
+    "subtitles": {
+      "place": "Time and place of the event",
+      "speaker": "Speaker",
+      "description": "Description",
+      "signed": "Signed up for the meetup"
+    },
+    "place": "place"
+  },
+  "meetups-form": {
+    "steps": {
+      "Obligatory Fields": "Obligatory Fields",
+      "Extra Fields": "Extra Fields"
+    },
+    "text": "Fill in the required fields below in the most detail, this will give full information about the upcoming event.",
+    "labels": {
+      "subject": "Subject",
+      "speaker": "Speaker",
+      "description": "Description",
+      "start": "Start",
+      "finish": "Finish",
+      "place": "Place",
+      "image": "Image"
+    },
+    "success": "Success"
+  },
+  "dropzone": {
+    "drop": "Drag and drop the images here or",
+    "download": "download",
+    "formats": "Allowed formats: .jpg .jpeg .png",
+    "max-size": "Max file size: 10 Mb",
+    "size": "File size:",
+    "mb": "Mb"
+  },
+  "errors-pages": {
+    "forbidden": "Forbidden!",
+    "description403": "You do not have permission to access on this website...",
+    "not-found": "Oops! Nothing was found!",
+    "description404": "We can not find the page you are looking for..."
+  },
+  "news": {
+    "labels": {
+      "title": "Title", 
+      "text": "Text", 
+      "image": "Image"
+    }
+  },
+  "form-errors": {
+    "title": "Title field is required!",
+    "text": "Text field is required!",
+    "subject": "Meetup subject field is required!",
+    "speaker-latin": "Enter speaker name using only latin letters 'Name Surname'!",
+    "speaker-name": "Speaker field is required! Enter 'Name Surname'",
+    "description": "Description field is required!",
+    "place": "Place field is required!",
+    "start": "Start date field is required!",
+    "finish": "Finish date field is required!"
+  }
+}

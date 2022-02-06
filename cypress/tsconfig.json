@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "types": [
+      "cypress",
+      "cypress-wait-until"
+    ]
+  },
+  "include": [
+    "**/*.ts"
+  ]
+}
