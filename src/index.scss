@@ -1,0 +1,37 @@
+@import "sass/fonts";
+@import "sass/colors";
+
+body {
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  font-size: 16px;
+  color: $grey31;
+  overflow-y: scroll;
+  background-color: $white97;
+}
+
+img {
+  border: none;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+  transition: color 0.3s ease;
+}
+
+ul,
+li,
+p,
+h1,
+h2,
+h3 {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
