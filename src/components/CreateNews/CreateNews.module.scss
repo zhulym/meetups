@@ -1,0 +1,7 @@
+@import "sass/colors";
+@import "sass/mixins";
+
+.heading {
+  @include mainHeadingStyle();
+  margin: 30px 0;
+}

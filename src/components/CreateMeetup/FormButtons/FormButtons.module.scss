@@ -1,0 +1,42 @@
+@import "sass/colors";
+@import "sass/mixins";
+
+.container {
+  @include formButtonContainer();
+}
+
+.buttonWrapper {
+  display: flex;
+  justify-content: space-between;
+  @media only screen and (max-width: 768px) {
+    flex-direction: column;
+  }
+
+  .extraDark {
+    width: 120px;
+  }
+
+  & .extraSecondary,
+  & .extraPrimary {
+    width: 130px !important;
+  }
+
+  & .extraSecondary {
+    position: relative;
+    left: 30px;
+  }
+
+  .submit {
+    @include formSubmit();
+  }
+
+  & .extraSecondary,
+  & .extraPrimary,
+  & .extraDark {
+    @media only screen and (max-width: 768px) {
+      width: 100% !important;
+      margin-bottom: 10px;
+      position: initial;
+    }
+  }
+}

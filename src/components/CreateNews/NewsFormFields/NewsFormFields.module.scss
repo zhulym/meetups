@@ -1,0 +1,13 @@
+@import "sass/colors";
+@import "sass/mixins";
+
+.container {
+  @include formContainer();
+  .imageLabel {
+    @include formLabel();
+    margin-top: 20px;
+  }
+  .dropZone {
+    margin-top: 8px;
+  }
+}

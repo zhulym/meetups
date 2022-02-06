@@ -1,0 +1,37 @@
+@import "sass/colors";
+
+.step {
+  width: 50%;
+  padding: 10px 30px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.number {
+  display: inline-block;
+  margin-right: 12px;
+  width: 24px;
+  height: 24px;
+  text-align: center;
+  line-height: 24px;
+  border-radius: 50%;
+  font-size: 12px;
+  flex-shrink: 0;
+}
+
+.activeStep {
+  border-bottom: 2px solid $blue;
+}
+.activeNum {
+  color: white;
+  background-color: $blue;
+}
+.disabledStep {
+  color: $grey58;
+}
+.disabledNum {
+  color: $grey73;
+  background-color: $white91;
+}

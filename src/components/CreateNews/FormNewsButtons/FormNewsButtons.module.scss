@@ -1,0 +1,20 @@
+@import "sass/colors";
+@import "sass/mixins";
+
+.container {
+  @include formButtonContainer();
+}
+
+.buttonWrapper {
+  display: flex;
+  justify-content: space-between;
+  .submit {
+    @include formSubmit();
+  }
+  @media only screen and (max-width: 768px) {
+    flex-direction: column;
+    & :nth-child(1) {
+      margin-bottom: 10px;
+    }
+  }
+}

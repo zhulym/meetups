@@ -1,0 +1,21 @@
+@import "sass/colors";
+@import "sass/mixins";
+
+.datePickerControl {
+  width: 47%;
+  display: flex;
+  flex-direction: column;
+}
+
+.calendars {
+  display: flex;
+  justify-content: space-between;
+}
+
+.calendarsPosition {
+  order: 1;
+}
+
+.place {
+  order: 2;
+}
