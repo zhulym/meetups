@@ -1,0 +1,33 @@
+@import "sass/mixins";
+@import "sass/colors";
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @media only screen and (max-width: 480px) {
+    flex-direction: column;
+    padding-bottom: 20px;
+  }
+}
+
+.heading {
+  @include mainHeadingStyle();
+}
+
+.amount {
+  line-height: 24px;
+  margin: 35px 0 25px;
+  color: $grey44;
+}
+
+.num {
+  margin-right: 5px;
+}
+
+.createLink {
+  @media only screen and (max-width: 480px) {
+    display: inline-block;
+    width: 100%;
+  }
+}

@@ -1,0 +1,27 @@
+@import "sass/colors";
+@import "sass/mixins";
+
+.success,
+.error {
+  font-size: 13px;
+  margin-top: 5px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  .icon {
+    margin-right: 5px;
+  }
+}
+
+.error {
+  color: $red;
+}
+
+.success {
+  color: $green30;
+}
+
+.label {
+  @include formLabel();
+  margin: 20px 0 8px;
+}

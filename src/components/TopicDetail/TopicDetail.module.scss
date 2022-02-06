@@ -1,0 +1,36 @@
+@import "sass/mixins";
+@import "sass/colors";
+
+.heading {
+  @include mainHeadingStyle();
+}
+
+.topic {
+  padding: 25px;
+}
+
+.avatarImage {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+}
+
+.avatarVoted {
+  width: 46px;
+  height: 46px;
+  line-height: 46px;
+  @media only screen and (max-width: 768px) {
+    margin-bottom: 10px;
+  }
+}
+
+.restVoted {
+  border-radius: 50%;
+  text-align: center;
+  color: $white;
+  background-color: $grey81;
+}
+
+.description {
+  margin-bottom: 15px;
+}

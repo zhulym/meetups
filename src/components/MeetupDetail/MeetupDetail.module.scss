@@ -1,0 +1,49 @@
+@import "sass/mixins";
+@import "sass/colors";
+
+.heading {
+  @include mainHeadingStyle();
+}
+
+.topic {
+  padding: 25px;
+}
+
+.timePlace {
+  margin-left: 20px;
+}
+.dateWrapper {
+  margin-bottom: 10px;
+}
+
+.avatarImage {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+}
+
+.image {
+  display: inline-block;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.avatarParticipant {
+  width: 47px;
+  height: 47px;
+  line-height: 47px;
+  @media only screen and (max-width: 768px) {
+    margin-bottom: 10px;
+  }
+}
+
+.restParticipants {
+  border-radius: 50%;
+  text-align: center;
+  color: $white;
+  background-color: $grey81;
+}
+
+.excerpt {
+  margin-bottom: 20px;
+}

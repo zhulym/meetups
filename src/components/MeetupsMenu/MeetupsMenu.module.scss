@@ -1,0 +1,45 @@
+@import "sass/mixins";
+@import "sass/colors";
+
+.container {
+  max-width: 550px;
+  margin: 0 auto;
+}
+
+.heading {
+  @include mainHeadingStyle();
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 10px;
+  border-bottom: 1px solid $white91;
+  li {
+    margin-right: 30px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.link {
+  color: $grey58;
+  padding: 10px;
+  transition: background-color 0.3s ease;
+  &:hover {
+    color: $white;
+    border-radius: 3px;
+    background-color: $purple75;
+    border-bottom-color: $white97;
+  }
+  @media only screen and (max-width: 768px) {
+    padding: 10px 0 10px;
+  }
+}
+
+.active {
+  position: relative;
+  font-weight: 500;
+  border-bottom: 2px solid $purple;
+}

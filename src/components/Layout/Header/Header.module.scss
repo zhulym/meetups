@@ -1,0 +1,204 @@
+@import "sass/colors";
+@import "sass/mixins";
+
+.header {
+  background: linear-gradient(63.5deg, $purple, $blue 83.37%);
+  box-shadow: 0 0 30px 5px $blue;
+}
+
+.container {
+  max-width: 1130px;
+  margin: 0 auto;
+  padding: 0 15px;
+  min-height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: $white;
+}
+
+.logoIcon {
+  color: $white;
+  @media only screen and (max-width: 768px) {
+    position: relative;
+    z-index: 3;
+  }
+}
+
+.menuWrap {
+  @media only screen and (max-width: 768px) {
+    position: fixed;
+    top: 0;
+    left: -150%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba($grey31, 0.95);
+    padding-top: 100px;
+    transition: left 0.3s ease;
+    overflow: auto;
+    z-index: 2;
+  }
+}
+
+.menu {
+  display: flex;
+  overflow: hidden;
+  @media only screen and (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+  }
+  .linkWrap {
+    display: flex;
+    position: relative;
+    padding: 0 5px;
+    margin-left: 60px;
+    @media only screen and (max-width: 768px) {
+      margin-left: 0;
+      width: 50%;
+      margin-bottom: 25px;
+      padding: 5px;
+      justify-content: center;
+    }
+    &:before {
+      @extend %line;
+      right: 0;
+      top: 33.33%;
+    }
+    &:after {
+      @extend %line;
+      left: 0;
+      bottom: 0;
+    }
+    &:hover {
+      a {
+        text-shadow: 1px 1px 5px $grey31;
+        &:before {
+          width: 100%;
+          @media only screen and (max-width: 768px) {
+            width: 0;
+          }
+        }
+      }
+      &:before,
+      &:after {
+        width: 100%;
+        @media only screen and (max-width: 768px) {
+          width: 0;
+        }
+      }
+    }
+  }
+}
+
+%line {
+  content: "";
+  position: absolute;
+  height: 33.33%;
+  width: 0;
+  background-color: $purple;
+  transition: 0.3s ease;
+}
+
+.link {
+  color: $white;
+  padding: 10px;
+  line-height: 19px;
+  transition: 0.3s ease;
+  z-index: 1;
+  &:hover {
+    color: $purple93;
+    @media only screen and (max-width: 768px) {
+      color: $purple75;
+    }
+  }
+  &:before {
+    @extend %line;
+    left: 0;
+    bottom: 66.66%;
+  }
+  @media only screen and (max-width: 768px) {
+    font-weight: 500;
+    font-size: 24px;
+    border: 2px solid $purple86;
+    border-radius: 5px;
+    text-align: center;
+    width: 100%;
+  }
+}
+
+.active {
+  font-weight: 500;
+  border-bottom: 2px solid $white;
+  @media only screen and (max-width: 768px) {
+    color: $purple93;
+    border: 2px solid $purple86;
+  }
+  &:hover {
+    border-bottom-color: $purple86;
+  }
+}
+
+.burgerIcon {
+  display: none;
+  cursor: pointer;
+  @media only screen and (max-width: 768px) {
+    display: block;
+    position: relative;
+    z-index: 3;
+    width: 30px;
+    height: 20px;
+    &.menuActive {
+      .burgerItem {
+        transform: scale(0) translate(0, -50%);
+      }
+      &::before {
+        top: 50%;
+        transform: rotate(-45deg) translate(0, -50%);
+      }
+      &::after {
+        bottom: 50%;
+        transform: rotate(45deg) translate(0, 50%);
+      }
+    }
+
+    &::before,
+    &::after,
+    .burgerItem {
+      position: absolute;
+      left: 0;
+      height: 10%;
+      width: 100%;
+      transition: all 0.3s ease 0s;
+      background-color: $white;
+    }
+
+    .burgerItem {
+      top: 50%;
+      transform: scale(1) translate(0px, -50%);
+    }
+
+    &::before,
+    &::after {
+      content: "";
+    }
+    &::before {
+      top: 0;
+    }
+    &::after {
+      bottom: 0;
+    }
+  }
+}
+
+.menuActive {
+  left: 0;
+}
+
+.signInUp {
+  @include signInUpStyle();
+}
+
+.buttonWrap {
+  display: flex;
+  flex-direction: column;
+}

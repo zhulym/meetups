@@ -1,0 +1,39 @@
+@import "sass/colors";
+@import "sass/mixins";
+
+.container {
+  display: flex;
+  align-items: center;
+  .name {
+    color: $white;
+    font-weight: 400;
+    @media only screen and (max-width: 768px) {
+      margin-bottom: 20px;
+      font-size: 22px;
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    display: none;
+    &.burger {
+      display: block;
+    }
+  }
+}
+
+.avatarImage {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  margin-left: 10px;
+  background-color: $purple75;
+  order: 1;
+}
+
+.signInUp {
+  @include signInUpStyle();
+}
+
+.buttonWrap {
+  display: flex;
+  flex-direction: column;
+}

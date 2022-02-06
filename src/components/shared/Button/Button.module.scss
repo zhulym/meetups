@@ -1,0 +1,63 @@
+@import "sass/colors";
+
+.button {
+  box-shadow: 0 4px 8px $grey81;
+  font-family: inherit;
+  border-radius: 5px;
+  text-align: center;
+  line-height: 16px;
+  font-size: 14px;
+  padding: 12px 0;
+  font-weight: 500;
+  cursor: pointer;
+  outline: none;
+  width: 150px;
+  background-size: 200%;
+  transition: background-position 0.5s ease, background-color 0.5s ease, color 0.5s ease;
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  @media only screen and (max-width: 768px) {
+    width: 100%;
+    padding: 12px 10px;
+    margin-bottom: 10px;
+  }
+}
+
+.primary {
+  background-image: linear-gradient(63.5deg, $purple, $blue 83.37%);
+  color: $white;
+  border: none;
+  &:hover {
+    background-position: right;
+  }
+  &:active {
+    background-position: left;
+    background-image: linear-gradient(63.5deg, $blue, $purple 83.37%);
+  }
+}
+
+.dark {
+  background-color: $white;
+  color: $grey58;
+  border: 1px solid $grey58;
+  &:hover {
+    background-color: $grey96;
+  }
+  &:active {
+    background-color: $grey92;
+  }
+}
+
+.secondary {
+  background-color: initial;
+  color: $purple;
+  border: 1px solid $purple;
+  &:hover {
+    background-color: $purple93;
+  }
+  &:active {
+    background-color: $purple86;
+  }
+}

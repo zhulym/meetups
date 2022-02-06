@@ -1,0 +1,67 @@
+@import "sass/colors";
+@import "sass/mixins";
+
+.container {
+  @include cardContainer();
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cardIcon {
+  @include cardIcon();
+}
+
+.delete {
+  &:hover {
+    color: $red;
+  }
+}
+
+.edit {
+  margin-left: 30px;
+  &:hover {
+    color: $blue;
+  }
+}
+
+.startDate {
+  display: flex;
+  align-items: center;
+  line-height: 19px;
+  color: $grey44;
+  @media only screen and (max-width: 575px) {
+    font-size: 14px;
+  }
+}
+
+.subject {
+  @include cardSubject();
+}
+
+.excerpt {
+  @include cardExcerpt();
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+.modified {
+  display: flex;
+  align-items: center;
+  line-height: 17px;
+  letter-spacing: 0.25px;
+  color: $grey73;
+  @media only screen and (max-width: 575px) {
+    display: none;
+  }
+}
+
+.buttonWrap {
+  display: flex;
+}

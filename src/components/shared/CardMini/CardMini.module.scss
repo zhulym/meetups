@@ -1,0 +1,86 @@
+@import "sass/colors";
+
+.card {
+  background-color: $white;
+  border-radius: 5px;
+  padding: 25px;
+  margin-bottom: 10px;
+  box-shadow: 0 4px 7px rgba($grey88, 0.4);
+  &.subject {
+    padding: 0;
+    font-family: "Rubik", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 32px;
+  }
+  @media only screen and (max-width: 768px) {
+    padding: 15px;
+  }
+}
+
+.subtitle {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  margin: 5px 0;
+  color: $grey73;
+}
+
+.speaker,
+.author {
+  display: flex;
+  align-items: center;
+}
+
+.name {
+  font-weight: 500;
+  line-height: 19px;
+}
+
+.date {
+  font-weight: 500;
+  line-height: 15px;
+}
+
+.excerpt {
+  line-height: 20px;
+}
+
+.support {
+  display: flex;
+  @media only screen and (max-width: 768px) {
+    flex-wrap: wrap;
+  }
+}
+
+.topicButtons,
+.meetupButtons,
+.newsButtons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  @media only screen and (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.topicButtons {
+  & :nth-child(2) {
+    position: relative;
+    left: 18px;
+    @media only screen and (max-width: 768px) {
+      position: initial;
+    }
+  }
+}
+
+.topicButtons,
+.meetupButtons,
+.newsButtons {
+  & :nth-child(2) {
+    @media only screen and (max-width: 768px) {
+      margin: 10px 0;
+    }
+  }
+}

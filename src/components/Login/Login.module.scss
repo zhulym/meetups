@@ -1,0 +1,26 @@
+@import "sass/colors";
+@import "sass/mixins";
+
+.container {
+  margin-top: 20vh;
+}
+
+.heading {
+  @include mainHeadingStyle();
+  margin-bottom: 10px;
+}
+
+.authButton {
+  margin-top: 20px !important;
+  padding: 15px !important;
+  background: linear-gradient(63.5deg, $purple, $blue 83.37%);
+}
+
+.error {
+  margin-top: 20px;
+  color: $red;
+}
+.formikError {
+  color: $red;
+  font-size: 13px;
+}

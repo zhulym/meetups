@@ -1,0 +1,25 @@
+@import "sass/colors";
+
+.container {
+  display: flex;
+  align-items: center;
+}
+
+.heading {
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.35px;
+  color: $grey31;
+}
+
+.text {
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0.35px;
+}
+
+.icon {
+  margin-right: 20px;
+}

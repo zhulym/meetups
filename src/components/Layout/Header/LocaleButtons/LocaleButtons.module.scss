@@ -1,0 +1,30 @@
+@import "sass/colors";
+
+.container {
+  display: flex;
+  justify-content: flex-end;
+  @media only screen and (max-width: 768px) {
+    justify-content: center;
+    margin-top: 20px;
+  }
+}
+
+.langBtn {
+  border: none;
+  color: $white;
+  cursor: pointer;
+  background: none;
+  padding-bottom: 2px;
+  &:hover {
+    color: $purple86;
+  }
+  @media only screen and (max-width: 768px) {
+    padding: 0 20px;
+    font-size: 18px;
+  }
+}
+
+.activeLang {
+  text-decoration: underline;
+  text-shadow: 0 0 10px $white;
+}

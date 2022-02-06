@@ -1,0 +1,43 @@
+@import "sass/colors";
+@import "sass/mixins";
+
+.container {
+  @include cardContainer();
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cardIcon {
+  @include cardIcon();
+}
+
+.delete {
+  &:hover {
+    color: $red;
+  }
+}
+
+.subject {
+  @include cardSubject();
+}
+
+.excerpt {
+  @include cardExcerpt();
+}
+
+.support {
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.25px;
+  display: flex;
+  align-items: center;
+  margin-top: 25px;
+  color: $grey73;
+}
+
+.supportText {
+  margin-left: 10px;
+}

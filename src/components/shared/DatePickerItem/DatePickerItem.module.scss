@@ -1,0 +1,100 @@
+@import "sass/colors";
+@import "sass/mixins";
+
+.datesField {
+  width: 100%;
+  outline: none;
+  padding: 10px 14px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  border: 1px solid $grey87;
+  background-color: $white99;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  &:focus {
+    outline: 1px solid $purple;
+  }
+  &:hover {
+    background-color: $white97;
+  }
+  &.datesFieldError {
+    border: 1px solid $red;
+    &:focus {
+      border: none;
+      outline: 1px solid $purple;
+    }
+  }
+  &.datesFieldSuccess {
+    border: 1px solid $green30;
+  }
+  @media only screen and (max-width: 768px) {
+    padding: 10px 35px 10px 5px;
+  }
+}
+
+.calendar {
+  font-size: 12px;
+  background-color: $white;
+  border: 1px solid $grey87;
+  box-shadow: 0 8px 16px rgba($black, 0.1);
+}
+
+.datePicker,
+.datesField,
+.calendar,
+.defaultDaysStyle {
+  color: $grey44;
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+}
+
+.dayField,
+.timeField {
+  background: linear-gradient(63.5deg, $purple, $blue 83.37%);
+}
+
+.timeField,
+.defaultTimeField {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 !important;
+}
+
+.datePickerLabel {
+  @include formLabel();
+  margin: 25px 0 8px;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 35px;
+    left: 86%;
+    width: 16px;
+    height: 18px;
+    z-index: 1;
+    cursor: pointer;
+    background-image: url("../../../assets/images/icons/datepicker.svg");
+    @media only screen and (max-width: 480px) {
+      left: 83%;
+    }
+  }
+}
+
+.success,
+.error {
+  font-size: 13px;
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+  .icon {
+    margin-right: 5px;
+  }
+}
+
+.error {
+  color: $red;
+}
+
+.success {
+  color: $green30;
+}
